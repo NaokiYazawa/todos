@@ -20,7 +20,8 @@ const todos = (state = [], action) => {
   }
 }
 
-// state の初期値は空の配列
+// todos の state の初期値は空の配列
+// Redux Devtools Extension の State を見ると、最初は todos(pin): [] となっている。
 
 // TOGGLE_TODO では、「state 内の todo 全て」と「クリックした todo」の id を比較している。
 // 一致すれば、completed の値を反転させる。
