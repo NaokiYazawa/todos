@@ -13,6 +13,7 @@ const AddTodo = ({ dispatch }) => {
           return
         }
         dispatch(addTodo(input.value))
+        // addTodo というアクションをdispatchの引数に渡す。
         // dispatch関数実行する。
         // reducerに実行したいActionが伝わる。
         // storeの中のデータを変更できる。

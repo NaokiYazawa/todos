@@ -13,6 +13,8 @@ export const setVisibilityFilter = filter => ({
   filter
 })
 
+// 完了か未完了かを切り替えるアクション
+// Todo の id のみを情報として渡す
 export const toggleTodo = id => ({
   type: 'TOGGLE_TODO',
   id
@@ -25,6 +27,9 @@ export const VisibilityFilters = {
   SHOW_COMPLETED: 'SHOW_COMPLETED',
   SHOW_ACTIVE: 'SHOW_ACTIVE'
 }
+
+// Filterの種類を定義している。
+// この「VisibilityFilters」は、reducerで用いられる。
 
 // Action とは type プロパティを持っている JavaScript のオブジェクト。
 // Action はオブジェクトなので Action 自体が何かの処理を行うことはない。

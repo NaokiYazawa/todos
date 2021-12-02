@@ -20,6 +20,7 @@ const mapStateToProps = state => ({
   todos: getVisibleTodos(state.todos, state.visibilityFilter)
 })
 
+// toggleTodo という関数は、Todo の id のみの情報を必要としている。
 const mapDispatchToProps = dispatch => ({
   toggleTodo: id => dispatch(toggleTodo(id))
 })
@@ -30,6 +31,7 @@ export default connect(
 )(TodoList)
 
 // TodoList Component に mapStateToProps と mapDispatchToProps
+// TodoList Component に todos と toggleTodoを渡す。
 
 // mapStateToProps は todos を返す。
 // mapStateToProps、mapDispatchToPropsについて

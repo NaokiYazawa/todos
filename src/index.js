@@ -12,6 +12,9 @@ const store = createStore(
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
+// rootReducer
+console.log(rootReducer)
+
 render(
   <Provider store={store}>
     <App />
